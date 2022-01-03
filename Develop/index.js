@@ -66,10 +66,16 @@ const questions = [
         choices: ['MIT', 'GPL', 'Apache', 'GNU', 'ISC', 'Not listed'],
     },
     {
+        type: 'checkbox',
+        name: 'languages',
+        message: 'What did you this project with? (Check all that apply)',
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+    },
+    {
         type: "input",
         name: "username",
         message: "What is your gitHub username? (Required)",
-        validate: usernameInput => {
+        validate: userNameInput => {
             if (userNameInput) {
                 return true;
             } else {
@@ -107,10 +113,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
+function writeToFile(fileName, data) {
+    fs.writeFile(`./dist/${fileName}`, data, err => {
+        if (err) {
+            throw err
+        };
+        console.log('README created!')
+    });
+};
+// function to initialize program
+function init() {
+    return inquirer.prompt(questions);
+};
+// function call to initialize program
+init()
+    .then(generatedReadme => writeToFile('README.md', generatedReadme))
+    .catch(err => {
+        console.log(err);
+    });
