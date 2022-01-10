@@ -14,6 +14,17 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
   return `## Project Title: 
   ${data.projectName}
+
+  ## Table of Contents 
+  - [Description](#description)
+  - [installation](#installation)
+  - [instructions](#instructions)
+  - [licenses](#licenses)
+  - [languages](#languages)
+  - [username](#username)
+  - [repo](#repo)
+  - [email](#email)
+
   ## Description of Project: 
   ${data.description}
   ## Installation instructions: 
@@ -27,6 +38,7 @@ function generateMarkdown(data) {
   ## languages:
   ${data.languages}
   ## Email: 
+  Please email me here for any additional questions you may have!
   ${data.email}
   ## GitHub Username:
   ${data.username}

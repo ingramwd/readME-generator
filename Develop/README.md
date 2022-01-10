@@ -1,22 +1,35 @@
-## Project Title: wlajskf
+## Project Title: 
+  Run Buddy
+
+  ## Table of Contents 
+  - [Description](#description)
+  - [installation](#installation)
+  - [instructions](#instructions)
+  - [licenses](#licenses)
+  - [languages](#languages)
+  - [username](#username)
+  - [repo](#repo)
+  - [email](#email)
+
   ## Description of Project: 
-  fkafjdafja;sljlfsaj dffkjakjasf
+  To connect local runners with other local runners to form groups to help encourage other runners to continue running
   ## Installation instructions: 
-  fjaklfnsadnfffnfnfnfnf
+  No installation required
   ## Contributors: 
   undefined
   ## Instructions:
-  jkalsjf;
+  You sign up for an account online and mark your location
   ## licenses:
-  MIT,GPL,Apache,GNU
+  MIT,GPL,Apache
   ## languages:
-  JavaScript,HTML,CSS,ES6
+  HTML,CSS
   ## Email: 
-  immfasmfiasmf;as
+  Please email me here for any additional questions you may have!
+  ingramwd01@gmail.com
   ## GitHub Username:
-  ashksfja;kfd
+  Ingramwd
   ## Repository Name:
-  safkjfafasjlfhsahfjkhfashhkf
+  run-buddy
 
   
 
